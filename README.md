@@ -1,2 +1,0 @@
-# dydaktyka
-strona do ćwiczeń
