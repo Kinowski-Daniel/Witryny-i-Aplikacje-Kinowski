@@ -10,11 +10,9 @@ var d1_kin = prompt("dzień 1 = ","");
 var d2_kin = prompt("dzień 2 = ","");
 var g1_kin = prompt("godzina 1 = ","");
 var g2_kin = prompt("godzina 2 = ","");
-var suma;
- var d1_kin = parseFloat(d1_kin);
- var d2_kin = parseFloat(d2_kin);
- suma=(((d1_kin + d2_kin -1) *24*60*60) - (g1_kin - g1_kin)) *(60*60);
- document.write("suma=" + d1_kin +" + "+d2_kin+" = " + suma + "<br>");
+var roznica;
+var roznica_ogl =((d2_kin*24*60*60) + (g2_kin*60*60)) - ((d1_kin*24*60*60) + (g1_kin*60*60));
+ document.write("suma=" + d1_kin +" + "+d2_kin+" = " + roznica_ogl + "<br>");
  </script>
 </div>
 </div>
