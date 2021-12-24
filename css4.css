@@ -1,0 +1,11 @@
+div {
+    color: rgb(100, 100, 250);
+    font-size: 1cm;
+}
+
+@media screen and (min-width:390px) and (max-width:820px) {
+    div {
+        color: rgb(233, 93, 93);
+        font-size: 2cm;
+    }
+}
