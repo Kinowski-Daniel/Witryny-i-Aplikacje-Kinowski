@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+		<title>zadanie5_26_22</title>
+	</head><body>
+        ax<sup>2</sup>+bx+c=0 <br/>
+        a=<input id="poleA"> <br/>
+        b=<input id="poleB"> <br/>
+        c=<input id="poleC"> <br/>
+        <input type="button" value="oblicz" onclick="oblicz()">
+        <script type="text/javascript">
+            const oblicz=()=>{
+                const a=parseInt(poleA.value);
+                const b=parseInt(poleB.value);
+                const c=parseInt(poleC.value);
+                const d= (b**2) - (4*a*c);
+                
+                if(d < 0){
+                document.write("delta= " + d+ "<br>");
+                document.write(" brak rozwiazania");
+                }
+                if(d > 0){
+                document.write("delta= " + d + "<br>") ;  
+                x1=(-b -Math.sqrt(d)) / (2*a);
+                x2=(-b+Math.sqrt(d)) / (2*a);
+                document.write("x1 = " + x1 + "<br>");
+                document.write("x2 = " + x2 + "<br>");
+                }   
+                if(d == 0){
+                    document.write("delta= " + d + "<br>") ;  
+                    x0= -b / (2*a);
+                    document.write("x0= " + x0 + "<br>");
+                }
+            }
+            </script>
+            </body>
+            </html>
+            
