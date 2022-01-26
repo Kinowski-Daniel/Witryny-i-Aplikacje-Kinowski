@@ -1,22 +1,34 @@
-<html>
-<title> zadanie 3 kinowski </title>
-<head>
-<style> textarea{
-width: 100%;
-height: 940px;
-</style>
-</head>
-<body>
-<textarea>
-======================Początek opisu teorii=================================== 
-Rodzaje okienek: 
- Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK,  
- Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną 
-następnie do programu.  
- Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).  
-Konwersji liczb. 
-Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków dlatego konieczna jest 
-konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia. parseFloat(zmienna) - konwersja zmiennej do typu float parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego) toString(zmienna) - konwersja zmiennej do typu łańcuchowego  ======================= Koniec opisu teorii ====================================== 
-</textarea>
-</body>
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+		<title>zadanie3_25_22</title>
+	</head><body>
+        <h4>Czy dany rok jest przestępny</h4>
+<input type="number" id="rok" value="2022">
+<input type="button" value="przelicz" onclick="zmien()">
+
+
+	<p id="wynik"></p>
+
+<script type="text/javascript">
+const zmien = () => {
+  var a = parseFloat(this.rok.value);
+ if (a=="" && a==null) {
+  alert("pole nie może byc puste");
+  document.getElementById("wynik").style="border:1px red solid";
+            }else {
+                rok.style="border:deafult";
+                if ((a%4==0 && a%100!==0) || a%400==0) {
+                    document.getElementById("wynik").innerHTML ="Rok " +a+ " jest przestępny";
+               
+            }else {
+                document.getElementById("wynik").innerHTML ="Rok " +a+  " jest rokiem zwykłym";
+                rok.style="border:deafult";
+            };
+            };
+            document.getElementById("wynik").innerHTML = w;
+        }
+        </script>
+	</body>
 </html>

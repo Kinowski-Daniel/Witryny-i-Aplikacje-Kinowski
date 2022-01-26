@@ -1,31 +1,35 @@
-<html>
-<head>
-<title>zadanie2</title>
-<script language="JavaScript">
-function WinOpen_kinowski1()
-{
-window.open("grafika1.html","okienko1","toolbar=no,directories=no,menubar=no,height=400,width=450,top=90,left=30");
-}
-function WinOpen_kinowski2()
-{
-window.open("grafika2.html","okienko2","toolbar=no,directories=no,menubar=no,height=400,width=450,top=90,left=250");
-}
-function WinOpen_kinowski3()
-{
-window.open("grafika3.html","okienko3","toolbar=no,directories=no,menubar=no,height=400,width=450,top=90,left=450");
-}
-function WinOpen_kinowski4()
-{
-window.open("grafika4.html","okienko4","toolbar=no,directories=no,menubar=no,height=400,width=450,top=90,left=700");
-}
-</script>
-</head>
-<body>
-<form>
-<input type="button" name="przycisk" value="Grafika1" onclick="WinOpen_kinowski1(' ')">
-<input type="button" name="przycisk" value="Grafika2" onclick="WinOpen_kinowski2(' ')">
-<input type="button" name="przycisk" value="Grafika3" onclick="WinOpen_kinowski3(' ')">
-<input type="button" name="przycisk" value="Grafika4" onclick="WinOpen_kinowski4(' ')">
-</form>
-</body>
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+		<title>rgb</title>
+		<style>
+		#wynik{
+		width:200px;
+		height:200px;
+		}
+		</style>
+	</head><body>
+<input type="range" id="r" min=1 max=255>
+<span id="red"></span><br>
+<input type="range" id="g" min=1 max=255>
+<span id="green"></span><br>
+<input type="range" id="b" min=1 max=255>
+<span id="blue"></span><br>
+
+	<p id="wynik"></p>
+
+    <script type="text/javascript">
+        const zmien = () => {
+            red.innerHTML = r.value;
+            green.innerHTML = g.value;
+            blue.innerHTML = b.value;
+           
+document.getElementById("wynik").style.backgroundColor = "rgb("+r.value+","+g.value+","+b.value+")";
+        }
+        r.addEventListener("change",zmien); 
+        g.addEventListener("change",zmien);
+        b.addEventListener("change",zmien);
+        </script>
+	</body>
 </html>
