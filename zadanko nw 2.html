@@ -1,0 +1,43 @@
+<!--Nie działa dokońca :b-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body onload="start()">
+
+        <div id="kulka" style="width: 75px; height: 75px; background-image: linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red);
+        color: transparent; border: 1px white solid; border-radius: 50%; position: absolute; left: 0; top: 0;">
+        
+    </div>
+    </body>
+    <script>
+        let krokx = 5;
+        let kroky = 5;
+        const przesun =()=> {
+            let x = parseInt(kulka.style.left);
+            let y = parseInt(kulka.style.top);
+            x += krokx;
+            y += kroky;
+            kulka.style.left = x +"px";
+            kulka.style.top = y + "px";
+            if (x == 200){
+            krokx= 5;
+            }
+            if (x == 0){
+            krokx= -5;
+            }
+            if (y == 100){
+            krokx= 5;
+            }
+            if (y == 0){
+            krokY= -5;
+            }
+           
+            
+        }
+        const start =()=>{
+            setInterval(przesun,50);
+        }
+    </script>
+    </html>
