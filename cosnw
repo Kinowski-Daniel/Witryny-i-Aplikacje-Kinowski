@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+		<title>zadanie4_26_22</title>
+	</head><body> 
+	<fieldset>
+	<legend>Rodzaj usługi</legend>
+	<input type="radio" id="cos1" name="cos">cena auta
+	<input type="radio" id="cos2" name="cos">cena auta z dodatkami
+	<input type="radio" id="cos3" name="cos">cena auta dodatkami i ubezpieczeniem
+	</fieldset>
+	
+<table>
+<tr>
+<td><fieldset>
+<legend>Nowe Auto</legend>
+Model Auta <select><option value="a">ford focus</option></select><br>
+Cena Euro <input type="text" value="2000"readonly><br>
+Kurs Euro <input type="text" value="4,64"readonly><br>
+</fieldset>
+</td>
+</tr>
+<tr>
+<td><fieldset>
+<legend>Dodatki</legend>
+Alarm <input type="text" value="500"readonly><br>
+Klimatyzacja <input type="text" value="3000"readonly><br>
+Radio <input type="text" value="400"readonly><br>
+</fieldset></td>
+</tr>
+<tr>
+<td><fieldset>
+<legend>Ubezpieczenie</legend>
+pierwsze auto <input type="checkbox">
+ilosc lat <input type="number">
+</fieldset></td>
+</tr>
+	</table>
+
+
+
+<script>
+class Nowe_Auto{
+	#ModelAuta
+	#CenaEuro
+	#KursEuro
+	constructor(cena, kurs){
+	this.#CenaEuro=cena;
+	this.#KursEuro=kurs;
+	}
+	
