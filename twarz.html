@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Usługi</title>
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+    <section id="L1">
+        <h2>W ofercie</h2>
+        <ul id="lll">
+            <li><a href="twarz.html">Zabiegi na twarz</a>
+                    <ol>
+                    <li>Peeling</li>
+                    <li>Maska</li>
+                    <li>Regulacja Brwi</li>
+                    </ol>
+            </li>
+            <li>Masaż</li>
+            <li>Diety Oczyszczające</li>
+        </ul>
+        <a href="egzamin.html">do strony głównej</a>
+    </section>
+
+    <section id="P1">
+        <h1>Salon Kosmetyczny</h1>
+    </section>
+    <section id="P2">
+        <h2>sprawdź cenę swojego zabegu </h2>
+        <input type="checkbox" id="peeling">Peeling<br>
+        <input type="checkbox" id="maska">Maska<br>
+        <input type="checkbox" id="masaż">Masaż<br>
+        <input type="checkbox" id="brwi">Brwi<br>
+        <input type="button" value="sprawdz cenę" onclick="oblicz()">
+        <p id="wynik"></p>
+        
+    </section>
+
+    <section id="L2"> <img  src="obraz1.jpg" id="ooo" ></section>
+
+    <footer id="fff"> <p> Autor Daniel Kinowski 2P</p></footer>
+   
+    </body>
+    <script>
+        const oblicz=()=>{
+            let suma =0;
+            if(peeling.checked){
+                suma+=45;
+            }
+            if(maska.checked){
+                suma+=30;
+            }
+            if(masaż.checked){
+                suma+=20
+            }
+            if(brwi.checked){
+                suma+=5
+            }
+
+            wynik.innerHTML="cena zabiegów:"+ suma;
+        }
+    </script>
+</html>

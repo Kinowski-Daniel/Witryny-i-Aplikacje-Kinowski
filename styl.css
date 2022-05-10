@@ -1,0 +1,58 @@
+*{ 
+    font-family: Garamond;
+}
+
+#L1{
+    height: 500px;
+    width: 25%;
+    background: lavender;
+    float:left;
+}
+
+#L2{
+    height: 300px;
+    width: 25%;
+    background: lavender;
+    float: left;
+}
+
+#P1{
+    height: 150px;
+    width: 75%;
+    background: indigo;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    float:right
+
+}
+
+#P2{
+    height: 650px;
+    width: 75%;
+    background: lavender;
+    font-size: 200%;
+    text-align: center;
+    float: right;
+}
+
+#fff{
+background: indigo;
+color: white;
+text-align: right;
+clear:both;
+}
+
+#lll{
+    list-style-type: square;
+}
+
+#ooo{
+ padding: 5px;
+ margin: 10px;
+}
+
+#ooo:hover{
+    padding: 4px;
+    border:1px indigo solid;
+}
