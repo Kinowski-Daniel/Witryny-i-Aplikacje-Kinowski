@@ -1,0 +1,47 @@
+*{
+    background-color:#F6E5DC ;
+    font-family: verdana;
+}
+
+#hhh{
+    background-color:#2F180C ;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+    width:60% ;
+    
+}
+
+#L1{
+    width: 60%;
+    float: left;
+}
+
+#P1{
+    font-size: 150%;
+    padding: 70px;
+    float: right;
+
+}
+
+#L2{
+    background-color:#D0B6A8 ;
+    text-align: center;
+    padding: 30px;
+    clear: both;
+
+}
+
+#fff{
+    background-color:#2F180C  ;
+    color: khaki;
+    height: 60px;
+}
+
+.bb{
+    margin:10px;
+    padding:5px;
+    background-color: #2F180C;
+    color: khaki;
+    clear: both;
+}
